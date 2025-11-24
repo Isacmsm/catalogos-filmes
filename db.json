@@ -1,0 +1,11 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "titulo": "O Senhor dos Anéis",
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/3/38/Lord_of_the_Rings_Fellowship_of_the_Ring.jpg",
+      "descricao": "Um anel para a todos governar...",
+      "nota": 10
+    }
+  ]
+}
