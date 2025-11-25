@@ -1,13 +1,49 @@
-// src/services/api.ts
-
-// Define a URL base da API (JSON Server rodando localmente)
+// Define a URL base da API local
 const BASE_URL = 'http://localhost:3000';
 
-// Função assíncrona para buscar todos os filmes do banco de dados
+// Busca a lista completa de filmes (GET)
 export async function getFilmes() {
-  // Faz a requisição HTTP (GET) para o endpoint /filmes
   const response = await fetch(`${BASE_URL}/filmes`);
-  
-  // Converte a resposta bruta da requisição para o formato JSON
+  return await response.json();
+}
+
+// Interface para tipagem do objeto de filme na criação/edição
+interface NovoFilme {
+  titulo: string;
+  imagem: string;
+  nota: number;
+  descricao?: string;
+}
+
+// Envia um novo filme para o banco de dados (POST)
+export async function criarFilme(filme: NovoFilme) {
+  const response = await fetch(`${BASE_URL}/filmes`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(filme),
+  });
+
+  return await response.json();
+}
+
+// Remove um filme do banco de dados pelo ID (DELETE)
+export async function excluirFilme(id: string) {
+  await fetch(`${BASE_URL}/filmes/${id}`, {
+    method: 'DELETE',
+  });
+}
+
+// Atualiza os dados de um filme existente (PUT)
+export async function atualizarFilme(id: string, filme: NovoFilme) {
+  const response = await fetch(`${BASE_URL}/filmes/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(filme),
+  });
+
   return await response.json();
 }
