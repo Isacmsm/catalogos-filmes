@@ -15,9 +15,9 @@ JSON Server.
 
 ## Funcionalidades
 
--   **Listagem:** Visualização de todos os filmes cadastrados.\
--   **Cadastro:** Adição de novos filmes com título, imagem e nota.\
--   **Edição:** Atualização dos dados de um filme existente.\
+-   **Listagem:** Visualização de todos os filmes cadastrados.
+-   **Cadastro:** Adição de novos filmes com título, imagem e nota.
+-   **Edição:** Atualização dos dados de um filme existente.
 -   **Exclusão:** Remoção de filmes da lista.
 
 ## Como Rodar o Projeto
