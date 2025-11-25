@@ -4,7 +4,7 @@ Projeto desenvolvido para a disciplina de **Frameworks Front-End**, com
 o objetivo de criar um catálogo de filmes utilizando React, TypeScript e
 JSON Server.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 -   [React](https://react.dev/)
 -   [TypeScript](https://www.typescriptlang.org/)
@@ -13,14 +13,14 @@ JSON Server.
     API)
 -   CSS Modules / Estilização Inline
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 -   **Listagem:** Visualização de todos os filmes cadastrados.\
 -   **Cadastro:** Adição de novos filmes com título, imagem e nota.\
 -   **Edição:** Atualização dos dados de um filme existente.\
 -   **Exclusão:** Remoção de filmes da lista.
 
-## 🍿 Como Rodar o Projeto
+## Como Rodar o Projeto
 
 Pré-requisitos: Você precisa ter o [Node.js](https://nodejs.org/)
 instalado.
