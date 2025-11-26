@@ -28,7 +28,7 @@ instalado.
 ### 1. Clonar o repositório
 
 ``` bash
-git clone https://github.com/Isacmsm/catalogo-filmes.git
+git clone https://github.com/Isacmsm/catalogos-filmes.git
 cd catalogo-filmes
 ```
 
